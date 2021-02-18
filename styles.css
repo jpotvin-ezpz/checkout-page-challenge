@@ -1,0 +1,144 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+header {
+  margin: 50px 0;
+  font-size: 1.2rem;
+  color: #4e5150;
+}
+
+.main-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+}
+
+/* Form */
+.checkout-form {
+  display: flex;
+  flex-direction: column;
+  min-width: 465px;
+}
+
+.checkout-form > * {
+  display: flex;
+  flex-direction: column;
+}
+.checkout-form h2 {
+  font-size: 18px;
+  margin: 15px 0;
+  color: #333333;
+}
+
+.checkout-form label {
+  color: #4f4f4f;
+  font-size: 12px;
+  margin: 0 0 6px 0;
+}
+
+.checkout-form input {
+  border: 1px solid #828282;
+  margin-bottom: 20px;
+  color: #828282;
+  height: 56px;
+  border-radius: 12px;
+  width: 100%;
+}
+
+.checkout-form input[value="            Rodney Cotton"] {
+  color: #333333;
+  font-weight: 500;
+}
+
+.checkout-form input[value="save-info"] {
+  height: auto;
+}
+
+.checkout-form select {
+  border: 1px solid #828282;
+  margin-bottom: 20px;
+  color: #828282;
+  height: 56px;
+  border-radius: 12px;
+  padding-right: 40px;
+}
+
+div.icon-wrapper {
+  position: relative;
+}
+.icons {
+  position: absolute;
+  top: 15px;
+  left: 10px;
+  font-size: 2rem;
+  color: grey;
+}
+
+.country-postal--wrapper {
+  display: flex;
+}
+
+.country-wrapper {
+  margin-right: 40px;
+}
+
+label[for="country"],
+label[for="postal"] {
+  display: block;
+  margin: 0 0 6px 0;
+}
+
+#postal {
+  width: 147%;
+}
+
+.checkbox-label input {
+  border: 1px solid #828282;
+  margin-bottom: 0;
+  height: auto;
+  border-radius: 12px;
+  width: auto;
+}
+
+.submit-button {
+  width: 40%;
+  align-self: flex-end;
+  height: 54px;
+  border-radius: 12px;
+  background: #f2994a;
+  border: none;
+  color: white;
+  font-size: 1rem;
+}
+
+/* Shopping Cart */
+.checkout-bag {
+  background: #f2f2f2;
+  height: min-content;
+  min-width: 350px;
+  max-width: 285px;
+}
+.products-and-cost--wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

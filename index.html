@@ -4,7 +4,178 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Checkout Page</title>
   </head>
-  <body></body>
+  <body>
+    <header>
+      <h1>Checkout</h1>
+    </header>
+    <div class="main-wrapper">
+      <section class="checkout-bag">
+        <div class="products-and-cost--wrapper">
+          <div class="products-wrapper" id="product1">
+            <div class="product">
+              <img src="" />
+              <div class="name-price-wrapper">
+                <h3>Vintage Backbag</h3>
+                <p>
+                  <span class="sale-price">&#36;54.99</span>
+                  <span class="old-price">&#36;94.99</span>
+                </p>
+                <div class="quantity-wrapper">
+                  <p class="minus"></p>
+                  <p class="number"></p>
+                  <p class="plus"></p>
+                </div>
+              </div>
+            </div>
+
+            <div class="product" id="product2">
+              <img src="" />
+              <div class="name-price-wrapper">
+                <h3>Levi Shoes</h3>
+                <p>
+                  <span class="sale-price">&#36;74.99</span>
+                  <span class="old-price">&#36;124.99</span>
+                </p>
+                <div class="quantity-wrapper">
+                  <p class="minus"></p>
+                  <p class="number"></p>
+                  <p class="plus"></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="shipping-cost">
+            <h3>Shipping</h3>
+            <p>&#36;19</p>
+          </div>
+          <div class="total-cost">
+            <h3>Shipping</h3>
+            <p>&#36;148.98</p>
+          </div>
+        </div>
+      </section>
+
+      <form action="" method="get" class="checkout-form">
+        <div class="contact-info">
+          <h2>Contact Information</h2>
+
+          <label for="email">E-mail</label>
+          <div class="icon-wrapper">
+            <span class="icons material-icons"> email </span>
+            <input
+              id="email"
+              name="email"
+              type="email"
+              placeholder="            Enter your email..."
+              required
+            />
+          </div>
+
+          <label for="phone">Phone</label>
+          <div class="icon-wrapper">
+            <span class="icons material-icons"> local_phone </span>
+            <input
+              id="phone"
+              name="phone"
+              type="tel"
+              placeholder="            Enter your phone..."
+              required
+            />
+          </div>
+        </div>
+        <div class="shipping-info">
+          <h2>Shipping Address</h2>
+          <label for="full-name">Full name</label>
+          <div class="icon-wrapper">
+            <span class="icons material-icons"> account_circle </span>
+            <input
+              id="full-name"
+              name="full-name"
+              type="text"
+              value="            Rodney Cotton"
+              placeholder="            Enter your name..."
+              required
+            />
+          </div>
+          <label for="address">Address</label>
+          <div class="icon-wrapper">
+            <span class="icons material-icons"> home </span>
+            <input
+              id="address"
+              name="address"
+              type="text"
+              placeholder="            Your address..."
+              required
+            />
+          </div>
+          <label for="city">City</label>
+          <div class="icon-wrapper">
+            <span class="icons material-icons"> apartment </span>
+            <input
+              id="city"
+              name="city"
+              type="text"
+              placeholder="            Your city..."
+              required
+            />
+          </div>
+          <div class="country-postal--wrapper">
+            <div class="country-wrapper">
+              <label for="country">Country</label>
+              <div class="icon-wrapper">
+                <span class="icons material-icons"> public </span>
+                <select id="country" name="country" required>
+                  <option value="" disabled selected hidden>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Your
+                    country...
+                  </option>
+                  <option value="USA">USA USA USA!!!</option>
+                  <option value="losers">Loser country</option>
+                </select>
+              </div>
+            </div>
+            <div class="postal-wrapper">
+              <label for="postal">Postal code</label>
+              <div class="icon-wrapper">
+                <span class="icons material-icons"> markunread_mailbox </span>
+                <input
+                  id="postal"
+                  name="postal"
+                  type="text"
+                  placeholder="            Your postal code..."
+                  required
+                />
+              </div>
+            </div>
+          </div>
+          <label class="checkbox-label" for="save-info">
+            <input
+              id="save-info"
+              name="save-info"
+              type="checkbox"
+              value="save-info"
+            />
+            <span class="checkbox-text"
+              >Save this information for next time</span
+            >
+          </label>
+          <button class="submit-button">Continue</button>
+        </div>
+      </form>
+    </div>
+  </body>
 </html>
